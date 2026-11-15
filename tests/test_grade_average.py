@@ -68,3 +68,5 @@ def test_marks_type_invalid(mark_one, mark_two):
     # Act and Assert
     with pytest.raises(TypeError):
         calculate_average(mark_one, mark_two)
+
+#1
