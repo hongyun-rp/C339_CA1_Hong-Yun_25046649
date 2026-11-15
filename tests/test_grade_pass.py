@@ -58,4 +58,4 @@ def test_score_type_invalid(score):
     with pytest.raises(TypeError):
         has_passed(score)
 
-# Unit tests for has_passed
+# Unit tests for has_passed1
