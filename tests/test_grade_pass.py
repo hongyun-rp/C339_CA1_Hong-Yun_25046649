@@ -57,3 +57,5 @@ def test_score_type_invalid(score):
     # Act and Assert
     with pytest.raises(TypeError):
         has_passed(score)
+
+# Unit tests for has_passed
