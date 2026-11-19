@@ -40,8 +40,8 @@ def test_score_pass_mark_boundary_valid(score, expected):
 )
 def test_score_boundary_invalid(score):
     # Act and Assert
-    with pytest.raises(ValueError):
-        has_passed(score)
+    with pytest.raises(ValueError): # Assert: expect a ValueError
+        has_passed(score)           # Act: call the function
 
 
 @pytest.mark.parametrize(
@@ -55,5 +55,5 @@ def test_score_boundary_invalid(score):
 )
 def test_score_type_invalid(score):
     # Act and Assert
-    with pytest.raises(TypeError):
-        has_passed(score)
+    with pytest.raises(TypeError):     # Assert: expect a TypeError
+        has_passed(score)              # Act: call the function
